@@ -28,7 +28,9 @@ app.use(async (req, res, next) => {
   }
 });
 
+//Event APIs
 app.use("/api/v3/app", eventRoutes);
+//Nudge APIs
 app.use("/api/v3/app", nudgeRoutes);
 
 app.use((err, req, res, next) => {
